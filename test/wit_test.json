@@ -1,0 +1,134 @@
+[
+    {
+        "text": "Get temperature",
+        "intents": [
+            {
+                "name": "get_temperature",
+                "confidence": 0.75
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Change to 75 degrees please",
+        "intents": [
+            {
+                "name": "set_temperature",
+                "confidence": 0.75
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Set temperature to 80 degrees",
+        "intents": [
+            {
+                "name": "set_temperature",
+                "confidence": 0.75
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Set temperature now",
+        "intents": [
+            {
+                "name": "set_temperature",
+                "confidence": 0.75
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Get temperature",
+        "intents": [
+            {
+                "name": "get_temperature",
+                "confidence": 0.75
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Get temperature for me",
+        "intents": [
+            {
+                "name": "get_temperature",
+                "confidence": 0.75
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Get temperature",
+        "intents": [
+            {
+                "name": "get_temperature",
+                "confidence": 0.75
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Display temperature",
+        "intents": [
+            {
+                "name": "get_temperature",
+                "confidence": 0.75
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Display temperature for me",
+        "intents": [
+            {
+                "name": "get_temperature",
+                "confidence": 0.5
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Hey get temperature",
+        "intents": [
+            {
+                "name": "get_temperature",
+                "confidence": 0.75
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Please show temperature",
+        "intents": [
+            {
+                "name": "get_temperature",
+                "confidence": 0.75
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    },
+    {
+        "text": "Set temperature 70 degrees",
+        "intents": [
+            {
+                "name": "set_temperature",
+                "confidence": 1
+            }
+        ],
+        "entities": {},
+        "traits": {}
+    }
+]

@@ -1,0 +1,22 @@
+name: Model_Import_Manual_Workflow
+on: 
+  workflow_dispatch:
+    inputs:
+      appname:
+        description: 'Name of the wit.ai app to create'
+        required: true
+jobs:
+  import_model:
+    name: Wit Import Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: npm install -g wittycli
+      - run: wittycli import --file ./model/model.zip --name ${{ github.event.inputs.appname }} --private 
+        env: 
+          WIT_AUTH_TOKEN: ${{ secrets.WIT_AUTH_TOKEN }}

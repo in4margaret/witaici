@@ -1,0 +1,7 @@
+{
+    "version": 20200513,
+    "zip-command": "zip wittemp.zip wittemp\/app.json wittemp\/entities\/*.json wittemp\/intents\/*.json wittemp\/traits\/*.json wittemp\/utterances\/*.json",
+    "name": "wittemp",
+    "lang": "en",
+    "timezone": "America\/Los_Angeles"
+}

@@ -1,0 +1,25 @@
+name: Wit_CI
+
+on:
+  push:
+    paths:
+    - '**.zip'
+
+jobs:
+  ci_model:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Clone Repository
+        uses: actions/checkout@v2
+    
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: npm install -g wittycli
+      - run: |
+          NEW_WIT_AUTH_TOKEN=$(wittycli import --file ./model/model.zip --name "witcli${{ github.run_id }}" --private --dot access_token --wait)
+          echo "::set-env name=NEW_WIT_AUTH_TOKEN::$NEW_WIT_AUTH_TOKEN"
+        env: 
+          WIT_AUTH_TOKEN: ${{ secrets.WIT_AUTH_TOKEN }} 
+      - run: wittycli test --auth $NEW_WIT_AUTH_TOKEN --file ./test/wit_test.json --parallel 5

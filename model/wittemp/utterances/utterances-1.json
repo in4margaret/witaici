@@ -1,0 +1,34 @@
+{
+    "utterances": [
+        {
+            "text": "Is it hot?",
+            "entities": [],
+            "traits": [],
+            "intent": "get_temperature"
+        },
+        {
+            "text": "Set temperature to 70 degrees",
+            "entities": [],
+            "traits": [],
+            "intent": "set_temperature"
+        },
+        {
+            "text": "Tell me the temperature",
+            "entities": [],
+            "traits": [],
+            "intent": "get_temperature"
+        },
+        {
+            "text": "What's the current temperature?",
+            "entities": [],
+            "traits": [],
+            "intent": "get_temperature"
+        },
+        {
+            "text": "lower the temperature to 10 degrees",
+            "entities": [],
+            "traits": [],
+            "intent": "set_temperature"
+        }
+    ]
+}
