@@ -5,7 +5,7 @@ Let's use GitHub Actions to build CI for Wit.ai.
 Add WIT_AUTH_TOKEN secret to the secrets in GitHub repo Settings.
 ![github_secret](../images/github_secret.png)
  It should have a value of the Server Access Token from any app in Wit.ai. ![server_access_token](../images/server_access_token.png)
- Now let's create a file [.github/workflows/wit_ci.yml](.github/workflows/wit_ci.yml) in your repo that defines the CI. Let's have a look at what it does.
+ Now let's create a file [.github/workflows/wit_ci.yml](../.github/workflows/wit_ci.yml) in your repo that defines the CI. Let's have a look at what it does.
 
 First, we install the wittycli npm package in our CI workflow.
 
@@ -36,12 +36,12 @@ Results of the test run you can find in the GitHub Actions run:
 
 ![tests results](../images/github_test_result.png)
 
-GtHub Actions workflow is located in [.github/workflows/wit_ci.yml](.github/workflows/wit_ci.yml) in this repo.
+GtHub Actions workflow is located in [.github/workflows/wit_ci.yml](../.github/workflows/wit_ci.yml) in this repo.
 
 ## Review and continue improving your Wit.ai app in GitHub
 
 From our GitHub action run we see that 3 tests fail, so let's add additional utterances to the model and train our model with more utterances. Generally, it's a good idea to not modify the existing prod version of the Wit.ai app. That's why we will create a duplicate app for improving of the model.
-To do that we can import the existing model to the Wit.ai portal using [import_wit_model.yml](.github/workflows/import_wit_model.yml) GitHub Actions workflow that you can trigger manually.
+To do that we can import the existing model to the Wit.ai portal using [import_wit_model.yml](../.github/workflows/import_wit_model.yml) GitHub Actions workflow that you can trigger manually.
 
 ![import model](../images/github_model_import.png)
 Before you will trigger it manually you can specify Wit.ai model name.

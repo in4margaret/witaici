@@ -5,7 +5,7 @@ Let's use [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/) to 
 Add WIT_AUTH_TOKEN secret to Azure DevOps Variable Group.
 ![azdo_secret](../images/azdo_secret.png)
  It should have a value of the Server Access Token from any app in Wit.ai. ![server_access_token](../images/server_access_token.png)
- Now let's create a file [wit_ci.yml](.azdo/wit_ci.yml) in your Azure DevOps repo that defines the CI. Let's have a look at what it does.
+ Now let's create a file [wit_ci.yml](../.azdo/wit_ci.yml) in your Azure DevOps repo that defines the CI. Let's have a look at what it does.
 
 First, we install the wittycli npm package in our CI pipeline.
 
