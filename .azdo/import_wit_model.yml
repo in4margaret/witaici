@@ -1,0 +1,28 @@
+trigger: none
+pr: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+variables:
+  - group: wittyvars
+
+parameters:
+  - name: ModelName
+    displayName: Model Name
+    type: string
+    default: wittest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '12.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install -g wittycli
+  displayName: 'npm install'
+
+- script: |
+    wittycli import --file ./model/model.zip --name '${{ parameters.ModelName }}' --private 
+  displayName: 'import model'
+  name: 'importzip'
